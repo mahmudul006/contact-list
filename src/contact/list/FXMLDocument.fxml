@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="374.0" prefWidth="686.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="contact.list.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="374.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contact.list.FXMLDocumentController">
    <children>
       <GridPane layoutX="14.0" layoutY="14.0" prefHeight="266.0" prefWidth="372.0">
         <columnConstraints>
@@ -56,5 +56,7 @@
           <TableColumn prefWidth="75.0" text="C2" />
         </columns>
       </TableView>
+      <Button layoutX="421.0" layoutY="240.0" mnemonicParsing="false" text="Next" />
+      <Button layoutX="498.0" layoutY="240.0" mnemonicParsing="false" text="Prev" />
    </children>
 </AnchorPane>
