@@ -3,13 +3,8 @@ mahmdul
 mhm@mhm.cs
 dhaka dhaka
 group
-mahmdul2
-0124542
-mhm@mhm.cs2
-dhaka dhaka
-group2
-arif 
-45521
-asdad@ds
-asd asd
-ad
+Shakil Ahammed
+0123456
+shakil@yahoo.com
+Khulna
+Friend

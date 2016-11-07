@@ -10,6 +10,9 @@ package contact.list;
  * @author mahmud
  */
 public class Contact {
+
+    public Contact() {
+    }
     private String name;
     private String phoneNumber;
     private String email;
@@ -43,7 +46,8 @@ public class Contact {
     public String getGroup() {
         return group;
     }
-    public void showcontact(){
+
+    public void showcontact() {
         System.out.println(this.name);
         System.out.println(this.phoneNumber);
         System.out.println(this.email);
@@ -53,11 +57,11 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "" + name + "\n" 
-                + phoneNumber + "\n" 
-                + email + "\n" 
-                + address 
-                + "\n" + group ;
+        return "" + name + "\n"
+                + phoneNumber + "\n"
+                + email + "\n"
+                + address
+                + "\n" + group+"\n";
     }
-    
+
 }
