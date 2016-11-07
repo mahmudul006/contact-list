@@ -53,7 +53,11 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "" + name + "\n" + phoneNumber + "\n" + email + "\n" + address + "\n" + group +"\n";
+        return "" + name + "\n" 
+                + phoneNumber + "\n" 
+                + email + "\n" 
+                + address 
+                + "\n" + group ;
     }
     
 }

@@ -15,6 +15,7 @@ import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -75,6 +76,29 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void clearContact(ActionEvent event) {
         resetForm();
+    }
+
+    private void displaycontact(Contact loadcontactconsole){
+        nameField.setText(loadcontactconsole.getName());
+    }
+    
+    @FXML
+    private void loadContact(ActionEvent event) {
+        try {
+            RandomAccessFile loadcontact = new RandomAccessFile("contact.txt", "r");
+            String name = loadcontact.readLine();
+            String number = loadcontact.readLine();
+            String email = loadcontact.readLine();
+            String address = loadcontact.readLine();
+            String group = loadcontact.readLine();
+            Contact loadcontactconsole = new Contact(name,number,email,address,group);
+            System.out.println(loadcontactconsole);
+            displaycontact(loadcontactconsole);
+        } catch (FileNotFoundException ex) {
+            System.out.println("There is no file");
+        } catch (IOException ex){
+            
+        }
     }
     
 }
